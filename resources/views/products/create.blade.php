@@ -15,7 +15,7 @@
 
     <form action="{{ route('products.store') }}" method="post">
         @csrf
-        @method('PATCH')
+        @method('PUT')
 
         <input type="text" name="name" value="{{ old('name') }}" placeholder="Product name">
         <input type="number" name="quantity" value="{{ old('quantity') }}" placeholder="Quantity">
