@@ -54,7 +54,7 @@ class ProductController extends Controller
 
         $product->update($validated);
         return redirect()
-                ->route('products.show', [$product])
+                ->route('products.show',[$product])
                 ->with('message', "Product updated successfully");
     }
 

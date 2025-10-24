@@ -13,9 +13,9 @@
         </div>
     @endif
 
-    <form action="{{ route('products.update') }}" method="post">
+    <form action="{{ route('products.update',[$product])}}" method="post">
         @csrf
-        @method('PUT')
+        @method('put')
 
         <input type="text" name="name" value="{{ $product->name }}">
         <input type="number" name="quantity" value="{{ $product->quantity }}">
